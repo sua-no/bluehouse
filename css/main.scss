@@ -136,324 +136,7 @@ body{
     .section{
         width: 100%;
         height: 100vh;
-        &.page1{
-            @include background("ncov_main_bg.jpg");
-            padding: 160px 0;
-            box-sizing: border-box;
-            overflow-y: scroll;
-            -ms-overflow-style: none; /* IE and Edge */
-            scrollbar-width: none; /* Firefox */
-            &::-webkit-scrollbar {
-                display: none; /* Chrome, Safari, Opera*/
-            }
-            .page1__table{
-                width: 1480px;
-                margin: 0 auto;
-                display: flex;
-                border-radius: 10px;
-                overflow: hidden;
-                background: #213365;
-                &__left{
-                    width: 280px;
-                    height: 1190px;
-                    @include background("JJXWGQKCGP158640644386122.png");
-                    img{
-
-                    }
-                }
-                &__right{
-                    width: 1200px;
-                    display: flex;
-                    flex-direction: column;
-                    .covid__title{
-                        height: 104px;
-                        padding: 16px 40px;
-                        box-sizing: border-box;
-                        display: flex;
-                        justify-content: space-between;
-                        .covid__status{
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                            &__title{
-                                position: relative;
-                                span{
-                                    margin-left: 30px;
-                                    color: #fff;
-                                    font-weight: 500;
-                                }
-                                &::after{
-                                    @include after(20px,20px,url("../img/ico_siren.png"));
-                                    left:0px;
-                                    top:0;
-                                }
-                            }
-                            &__content{
-                                &__1{
-                                    background: #ebc055;
-                                    color: #09143e;
-                                    padding: 12px;
-                                    font-weight: 700;
-                                    font-size: 17px;
-                                }
-                                &__2{
-                                    background-color: #09143e;
-                                    padding: 13px;
-                                    position: relative;
-                                    &:after{
-                                        @include after(2px,16px,#fff);
-                                        left: 50%;
-                                        top: 14px;
-                                    }
-                                    span,em{
-                                        font-weight: 500;
-                                        font-size: 15px;
-                                    }
-                                    span{
-                                        padding-left: 18px;
-                                        position: relative;
-                                        color: #fff;
-                                        &::before{
-                                            @include after(14px,14px,none);
-                                            left: 0;                                            
-                                            top: 0;
-                                        }
-                                        &:first-of-type{
-                                            margin-right: 30px;
-                                            &:before{
-                                                @include background("location.png")
-                                            }
-                                        }
-                                        &:last-of-type{
-                                            &:before{
-                                                @include background("airplane.png")
-                                            }
-                                        }
-                                        em{
-                                            display: inline;
-                                            padding-left: 8px;
-                                            color: #ebc055;
-                                            font-style: normal;
-                                        }
-                                    }
-                                }
-                                &__3{
-                                    background: #40d6e9;
-                                    color: #09143e;
-                                    padding: 12px;
-                                    font-weight: 700;
-                                    font-size: 17px;
-                                    margin-left: 10px;
-                                }
-                                &__4{
-                                    background-color: #09143e;
-                                    color:#40d6e9;
-                                    padding: 13px;
-                                    font-weight: 500;
-                                    font-size: 15px;
-                                }
-                            }
-                        }
-                        .covid__date{
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                            align-items: flex-end;
-                            text-align: right;
-                            p{
-                                color: #fff;
-                                font-weight: 500;
-                            }
-                            a{  
-                                width: 230px;
-                                height: 30px;
-                                padding: 3px 10px;
-                                box-sizing: border-box;
-                                background: #162149;
-                                color: #fff;
-                                font-size: 13px;
-                                line-height: 21px;
-                                font-weight: 500;
-                                position: relative;
-                                &:after{
-                                    @include after(17px,17px,none);
-                                    @include background("rok.png");
-                                    left: 5px;
-                                    top: 5px;
-                                }
-                            }
-                        }
-                    }
-                    .covid__tab{
-                        width: 100%;
-                        height: 806px;
-                        background: #09153f;
-                        border-radius: 15px 15px 0 0;
-                        overflow: hidden;
-                        &__menu{
-                            width: 100%;
-                            display: flex;
-                            overflow: hidden;
-                            background: #213365;
-                            li{
-                                width: 50%;
-                                height: 52px;
-                                border-top: 2px solid #95b3d7;
-                                color: #fff;
-                                border-radius: 15px 15px 0 0;
-                                font-size: 17px;
-                                font-weight: 500;
-                                background: #09153f;
-                                line-height: 52px;
-                                text-align: center;
-                                cursor: pointer;
-                                &:last-of-type{
-                                    background: #2c3d6c;
-                                    border-top: none;
-                                }
-                            }
-                        }
-                        &__contents{
-                            background: #060f2c;
-                            width: 1132px;
-                            height: 535px;
-                            margin: 30px 34px;
-                            padding: 20px;
-                            border-radius: 10px;
-                            box-sizing: border-box;
-                            img{
-                                width: 100%;
-                            }
-                        }
-                        &__info{
-                            width: 1132px;
-                            margin: 0 auto;
-                            display: flex;
-                            justify-content: space-between;
-                            li{
-                                cursor: pointer;
-                            }
-                        }
-                    }
-                    .covid__newsroom{
-                        width: 100%;
-                        height: 280px;
-                        &__list{
-                            width: 100%;
-                            height: 100%;
-                            display: flex;
-                            >li{
-                                width: 30%;
-                                height: 100%;
-                                &:first-of-type{
-                                    width: 38%;
-                                }
-                            }
-                            &__1{
-                                padding: 30px 0 30px 20px;
-                                box-sizing: border-box;
-                                &__title{
-                                    display: flex;
-                                    justify-content: space-between;
-                                    h2{
-                                        font-size: 22px;
-                                        color: #FFF;
-                                    }
-                                    >span{
-                                        color: #aaa;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        cursor: pointer;
-                                    }
-                                }
-                                &__box{
-                                    margin-top: 20px;
-                                    padding: 15px;
-                                    border-radius: 8px;
-                                    background: #fff;
-                                    ul{
-                                        li{
-                                            a{
-                                                padding: 7px 0;
-                                                text-overflow: ellipsis;
-                                                font-size: 15px;
-                                            }
-                                            &:first-of-type{
-                                                font-weight: 500;
-                                            }
-                                            &:nth-of-type(3){
-                                                font-weight: 500;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            &__2{
-                                p{
-                                    width: 320px;
-                                    margin: 72px auto 0;
-                                    position: relative;
-                                    &:after{
-                                        @include after(100%,100%,none);
-                                        left: 0;
-                                        top: 0;
-                                        @include background("LKGFMQLUYB158382236999122.png");
-                                        cursor: pointer;
-                                    }
-                                    img{
-                                        width: 100%;
-                                    }
-                                }
-                            }
-                            &__3{
-                                padding: 30px 0 ;
-                                box-sizing: border-box;
-                                &__title{
-                                    display: flex;
-                                    justify-content: space-between;
-                                    h2{
-                                        font-size: 22px;
-                                        color: #FFF;
-                                    }
-                                    >span{
-                                        color: #aaa;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        cursor: pointer;
-                                    }
-                                }
-                                &__box{
-                                    margin-top: 20px;
-                                    padding: 15px;
-                                    border-radius: 8px;
-                                    background: #fff;
-                                    ul{
-                                        li{
-                                            a{
-                                                padding: 7px 0;
-                                                text-overflow: ellipsis;
-                                                font-size: 15px;
-                                            }
-                                            &:first-of-type{
-                                                font-weight: 500;
-                                            }
-                                            &:nth-of-type(4){
-                                                font-weight: 500;
-                                            }
-                                        }
-                                    }
-                                }   
-                            }
-                        }
-                    }
-
-                }
-            }
-        }
-        &.page2{
-            background: #2e3961;
-
-        }
+        overflow: hidden;
         &.page3{
             background: #4c64bb;
 
@@ -471,6 +154,334 @@ body{
 
         }
     }
+}
+.section.page1{
+    @include background("ncov_main_bg.jpg");
+    padding: 160px 0;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
+    .page1__table{
+        width: 1480px;
+        margin: 0 auto;
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #213365;
+        &__left{
+            width: 280px;
+            height: 1190px;
+            @include background("JJXWGQKCGP158640644386122.png");
+            img{
+
+            }
+        }
+        &__right{
+            width: 1200px;
+            display: flex;
+            flex-direction: column;
+            .covid__title{
+                height: 104px;
+                padding: 16px 40px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: space-between;
+                .covid__status{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    &__title{
+                        position: relative;
+                        span{
+                            margin-left: 30px;
+                            color: #fff;
+                            font-weight: 500;
+                        }
+                        &::after{
+                            @include after(20px,20px,url("../img/ico_siren.png"));
+                            left:0px;
+                            top:0;
+                        }
+                    }
+                    &__content{
+                        &__1{
+                            background: #ebc055;
+                            color: #09143e;
+                            padding: 12px;
+                            font-weight: 700;
+                            font-size: 17px;
+                        }
+                        &__2{
+                            background-color: #09143e;
+                            padding: 13px;
+                            position: relative;
+                            &:after{
+                                @include after(2px,16px,#fff);
+                                left: 50%;
+                                top: 14px;
+                            }
+                            span,em{
+                                font-weight: 500;
+                                font-size: 15px;
+                            }
+                            span{
+                                padding-left: 18px;
+                                position: relative;
+                                color: #fff;
+                                &::before{
+                                    @include after(14px,14px,none);
+                                    left: 0;                                            
+                                    top: 0;
+                                }
+                                &:first-of-type{
+                                    margin-right: 30px;
+                                    &:before{
+                                        @include background("location.png")
+                                    }
+                                }
+                                &:last-of-type{
+                                    &:before{
+                                        @include background("airplane.png")
+                                    }
+                                }
+                                em{
+                                    display: inline;
+                                    padding-left: 8px;
+                                    color: #ebc055;
+                                    font-style: normal;
+                                }
+                            }
+                        }
+                        &__3{
+                            background: #40d6e9;
+                            color: #09143e;
+                            padding: 12px;
+                            font-weight: 700;
+                            font-size: 17px;
+                            margin-left: 10px;
+                        }
+                        &__4{
+                            background-color: #09143e;
+                            color:#40d6e9;
+                            padding: 13px;
+                            font-weight: 500;
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .covid__date{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    text-align: right;
+                    p{
+                        color: #fff;
+                        font-weight: 500;
+                    }
+                    a{  
+                        width: 230px;
+                        height: 30px;
+                        padding: 3px 10px;
+                        box-sizing: border-box;
+                        background: #162149;
+                        color: #fff;
+                        font-size: 13px;
+                        line-height: 21px;
+                        font-weight: 500;
+                        position: relative;
+                        &:after{
+                            @include after(17px,17px,none);
+                            @include background("rok.png");
+                            left: 5px;
+                            top: 5px;
+                        }
+                    }
+                }
+            }
+            .covid__tab{
+                width: 100%;
+                height: 806px;
+                background: #09153f;
+                border-radius: 15px 15px 0 0;
+                overflow: hidden;
+                &__menu{
+                    width: 100%;
+                    display: flex;
+                    overflow: hidden;
+                    background: #213365;
+                    li{
+                        width: 50%;
+                        height: 52px;
+                        border-top: 2px solid #95b3d7;
+                        color: #fff;
+                        border-radius: 15px 15px 0 0;
+                        font-size: 17px;
+                        font-weight: 500;
+                        background: #09153f;
+                        line-height: 52px;
+                        text-align: center;
+                        cursor: pointer;
+                        &:last-of-type{
+                            background: #2c3d6c;
+                            border-top: none;
+                        }
+                    }
+                }
+                &__contents{
+                    background: #060f2c;
+                    width: 1132px;
+                    height: 535px;
+                    margin: 30px 34px;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-sizing: border-box;
+                    img{
+                        width: 100%;
+                    }
+                }
+                &__info{
+                    width: 1132px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .covid__newsroom{
+                width: 100%;
+                height: 280px;
+                &__list{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    >li{
+                        width: 30%;
+                        height: 100%;
+                        &:first-of-type{
+                            width: 38%;
+                        }
+                    }
+                    &__1{
+                        padding: 30px 0 30px 20px;
+                        box-sizing: border-box;
+                        &__title{
+                            display: flex;
+                            justify-content: space-between;
+                            h2{
+                                font-size: 22px;
+                                color: #FFF;
+                            }
+                            >span{
+                                color: #aaa;
+                                font-size: 14px;
+                                font-weight: 400;
+                                cursor: pointer;
+                            }
+                        }
+                        &__box{
+                            margin-top: 20px;
+                            padding: 15px;
+                            border-radius: 8px;
+                            background: #fff;
+                            ul{
+                                li{
+                                    a{
+                                        padding: 7px 0;
+                                        text-overflow: ellipsis;
+                                        font-size: 15px;
+                                    }
+                                    &:first-of-type{
+                                        font-weight: 500;
+                                    }
+                                    &:nth-of-type(3){
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__2{
+                        p{
+                            width: 320px;
+                            margin: 72px auto 0;
+                            position: relative;
+                            &:after{
+                                @include after(100%,100%,none);
+                                left: 0;
+                                top: 0;
+                                @include background("LKGFMQLUYB158382236999122.png");
+                                cursor: pointer;
+                            }
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    &__3{
+                        padding: 30px 0 ;
+                        box-sizing: border-box;
+                        &__title{
+                            display: flex;
+                            justify-content: space-between;
+                            h2{
+                                font-size: 22px;
+                                color: #FFF;
+                            }
+                            >span{
+                                color: #aaa;
+                                font-size: 14px;
+                                font-weight: 400;
+                                cursor: pointer;
+                            }
+                        }
+                        &__box{
+                            margin-top: 20px;
+                            padding: 15px;
+                            border-radius: 8px;
+                            background: #fff;
+                            ul{
+                                li{
+                                    a{
+                                        padding: 7px 0;
+                                        text-overflow: ellipsis;
+                                        font-size: 15px;
+                                    }
+                                    &:first-of-type{
+                                        font-weight: 500;
+                                    }
+                                    &:nth-of-type(4){
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }   
+                    }
+                }
+            }
+
+        }
+    }
+}
+.section.page2{
+    background: #2e3961;
+
+}
+.section.page3{
+    background: #2e3961;
+
+}.section.page4{
+    background: #2e3961;
+
+}.section.page5{
+    background: #2e3961;
+
 }
 .footer{
     &__gnb{
