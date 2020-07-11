@@ -524,20 +524,29 @@ body{
         }
     }
     &__contact{
-        width: 100%;
-        height: 280px;
-        padding: 60px 40px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         background: #282828;
+        &__wrap{
+            width: 1280px;
+            height: 280px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         &__sns{
             width: 340px;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            h2{
+                text-align: center;
+                opacity: .2;
+            }
             &__list{
                 width: 160px;
+                margin: 15px auto 0;
                 display: flex;
                 justify-content: space-around;
                 li{
@@ -567,9 +576,73 @@ body{
         }
         &__info{
             width: 470px;
+            h2{
+                margin-bottom: 20px;
+                font-size: 18px;
+                color: #fff;
+            }
+            ul{
+                li{
+                    height: 40px;
+                    span{
+                        width: 20px;
+                        height: 20px;
+                        vertical-align: middle;
+                        background-image: url("../img/icon_contact.png");
+                        background-repeat: no-repeat;
+                        background-position: left 0;
+                    }
+                    p{ 
+                        display: inline-block;
+                        text-indent: 20px;
+                        line-height: 40px;
+                        font-size: 12px;
+                        color: #959595;
+                    }
+                    &:nth-of-type(2) span{
+                        background-position: left -20px;
+                    }
+                    &:nth-of-type(3) span{
+                        background-position: left -40px;
+                    }
+                }
+            }
         }
         &__menu{
-            width: 50%;
+            width: 40%;
+            &__list{
+                display: flex;
+                li{
+                    margin-left: 14px;
+                    position: relative;
+                    &:first-of-type{
+                        margin-left: 0;
+                        &:before{
+                            display: none;
+                        }
+                    }
+                    &:before{
+                        @include after(1px,12px,#dcdcdc);
+                        left: -7px;
+                        top: calc(50% - 6px);
+                    }
+                    a{
+                        font-size: 14px;
+                        color: #dcdcdc;
+                    }
+                }
+            }
+            &__tip{
+                margin: 30px 0 6px;
+                p{
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #959595;
+                    white-space: pre-line;
+                }
+            }
+            &__mark{
+            }
         }
     }
     &__copyright p{
@@ -593,6 +666,12 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    &.page_start .navigation__prev{
+        visibility: hidden;
+    }
+    &.page_end .navigation__next{
+        visibility: hidden;
+    }
     &__prev{
         width: 26px;
         height: 15px;
@@ -603,9 +682,6 @@ body{
             &:hover{
                 background: url("../img/page_navigator.png") no-repeat right top;
             }
-        }
-        &.page_start{
-            visibility: hidden;
         }
     }
     &__num{
@@ -638,8 +714,6 @@ body{
                 background: url("../img/page_navigator.png") no-repeat right bottom;
             }
         }
-        &.page_end{
-            visibility: hidden;
-        }
+        
     }
 }
