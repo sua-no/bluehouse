@@ -6,6 +6,8 @@
     <title>대한민국 청와대</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -17,52 +19,52 @@
                         <li>
                             <a href="#" class="gnb__depth1__list">문재인 대통령</a>
                             <ul class="gnb__depth2">
-                                <li>공개일정</li>
-                                <li>걸어온길</li>
-                                <li>대통령의 말과 글</li>
-                                <li>김정숙 여사 소식</li>
+                                <li><a href="#">공개일정</a></li>
+                                <li><a href="#">걸어온길</a></li>
+                                <li><a href="#">대통령의 말과 글</a></li>
+                                <li><a href="#">김정숙 여사 소식</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" class="gnb__depth1__list">청와대 뉴스룸</a>
                             <ul class="gnb__depth2">
-                                <li>[특별] 코로나19 뉴스룸</li>
-                                <li>청와대가 전합니다</li>
-                                <li>청와대 이야기</li>
-                                <li>영상</li>
-                                <li>카드뉴스</li>
-                                <li>세계의 시선</li>
-                                <li>청와대 일기</li>
+                                <li><a href="#">[특별] 코로나19 뉴스룸</a></li>
+                                <li><a href="#">청와대가 전합니다</a></li>
+                                <li><a href="#">청와대 이야기</a></li>
+                                <li><a href="#">영상</a></li>
+                                <li><a href="#">카드뉴스</a></li>
+                                <li><a href="#">세계의 시선</a></li>
+                                <li><a href="#">청와대 일기</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" class="gnb__depth1__list">정책정보</a>                            
                             <ul class="gnb__depth2">
-                                <li>정책브리핑</li>
-                                <li>국정과제</li>
-                                <li>정부부처 업무보고</li>
+                                <li><a href="#">정책브리핑</a></li>
+                                <li><a href="#">국정과제</a></li>
+                                <li><a href="#">정부부처 업무보고</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" class="gnb__depth1__list">국민소통 광장</a>
                             <ul class="gnb__depth2">
-                                <li>문재인 대통령 3주년</li>
-                                <li>국민청원</li>
-                                <li>국민과의 대화</li>
-                                <li>토론방</li>
-                                <li>국민신문고</li>
-                                <li>열린참여</li>
+                                <li><a href="#">문재인 대통령 3주년</a></li>
+                                <li><a href="#">국민청원</a></li>
+                                <li><a href="#">국민과의 대화</a></li>
+                                <li><a href="#">토론방</a></li>
+                                <li><a href="#">국민신문고</a></li>
+                                <li><a href="#">열린참여</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" class="gnb__depth1__list">청와대 알림판</a>
                             <ul class="gnb__depth2">
-                                <li>정보공개</li>
-                                <li>일자리 상황판</li>
-                                <li>청와대 조직도</li>
-                                <li>세입.세출예산 운용상황</li>
-                                <li>대통령 기록관</li>
-                                <li>오시는 길</li>
+                                <li><a href="#">정보공개</a></li>
+                                <li><a href="#">일자리 상황판</a></li>
+                                <li><a href="#">청와대 조직도</a></li>
+                                <li><a href="#">세입.세출예산 운용상황</a></li>
+                                <li><a href="#">대통령 기록관</a></li>
+                                <li><a href="#">오시는 길</a></li>
                             </ul>
                         </li>
                         <li>
@@ -77,14 +79,87 @@
                             <button type="button" class="search__page__closer"></button>
                         </div>
                     </div>
+                    <div class="language"><img src="img/language_icon.gif" alt=""><span>English</span></div>
                 </div>
-                
-                <div class="language"><span>English</span></div>
             </div>
         </header>
         <div class="contents">
             <section class="section page1">
-
+                <div class="page1__table">
+                    <div class="page1__table__left"><img src="img/KTFJPEQCPA158640628335468.png" alt=""></div>
+                    <div class="page1__table__right">
+                        <div class="covid__title">
+                            <div class="covid__status">
+                                <div class="covid__status__title">
+                                    <span>코로나바이러스감염증-19 현황</span>
+                                </div>
+                                <div class="covid__status__content">
+                                        <span class="covid__status__content__1">일일 확진자</span>
+                                        <span class="covid__status__content__2">
+                                            <span>지역발생<em>22</em></span>
+                                            <span>해외유입<em>23</em></span>
+                                        </span>
+                                        <span class="covid__status__content__3">일일 완치자</span>
+                                        <span class="covid__status__content__4">46</span>
+                                </div>
+                            </div>
+                            <div class="covid__date">
+                                <p>2020년 07월 10일 00시 기준 중앙방역대책본부</p>
+                                <a href="http://ncov.mohw.go.kr/#link" target="_blank">코로나19 정부 공식 사이트 이동 →</a>
+                            </div>
+                        </div>
+                        <div class="covid__tab">
+                            <ul class="covid__tab__menu">
+                                <li>국내동향</li>
+                                <li>국제동향</li>
+                            </ul>
+                            <div class="covid__tab__contents">
+                                <img src="img/tab_011.jpg" alt="">
+                            </div>
+                            <ul class="covid__tab__info">
+                                <li><img src="img/btn1.png" alt=""></li>
+                                <li><img src="img/btn2.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="covid__newsroom">
+                            <ul class="covid__newsroom__list">
+                                <li class="covid__newsroom__list__1">
+                                    <div class="covid__newsroom__list__1__title">
+                                        <h2>코로나19 뉴스룸</h2>
+                                        <span>더보기+</span>
+                                    </div>
+                                    <div class="covid__newsroom__list__1__box">
+                                        <ul>
+                                            <li><a href="#">· "한국 경제가 가장 선방할 것" 국제적 평가받는 이유는?</a></li>
+                                            <li><a href="#">· 한-EU 화상 정상회담 | 한국과 EU가 만난 진짜 이유?</a></li>
+                                            <li><a href="#">· 2020년도 제3회 추가경정예산 35.1조 확정</a></li>
+                                            <li><a href="#">· 빅데이터 전문가가 직접 말하는 코로나19의 시대</a></li>
+                                            <li><a href="#">· 거리 두기 단계별로 다르다? | 직접 알려드립니다</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="covid__newsroom__list__2">
+                                    <p><img src="img/maxresdefault.jpg" alt=""></p>
+                                </li>
+                                <li class="covid__newsroom__list__3">
+                                    <div class="covid__newsroom__list__3__title">
+                                        <h2>국민과 함께</h2>
+                                        <span>더보기+</span>
+                                    </div>
+                                    <div class="covid__newsroom__list__3__box">
+                                        <ul>
+                                            <li><a href="#">· 대한민국을 뭉치게 만든 이것은? #국민덕분에</a></li>
+                                            <li><a href="#">· 문재인 대통령도 처음 본다는 라이브 커머스의 힘</a></li>
+                                            <li><a href="#">· "안전하게 식사합시다" 음식점 생활방역, 어떻게</a></li>
+                                            <li><a href="#">· 여유롭고 안전한 '오늘의 여행법' 비대면 관광지</a></li>
+                                            <li><a href="#">· 코로나19가 바꾼 올 여름 해수욕장 이용법</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="section page2">
 
@@ -102,7 +177,83 @@
 
             </section>
         </div>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="footer__gnb">
+                <ul class="gnb__depth1">
+                    <li>
+                        <h3>문재인 대통령</h3>
+                        <ul class="gnb__depth2">
+                            <li><a href="#">공개일정</a></li>
+                            <li><a href="#">걸어온길</a></li>
+                            <li><a href="#">대통령의 말과 글</a></li>
+                            <li><a href="#">김정숙 여사 소식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>청와대 뉴스룸</h3>
+                        <ul class="gnb__depth2">
+                            <li><a href="#">[특별] 코로나19 뉴스룸</a></li>
+                            <li><a href="#">청와대가 전합니다</a></li>
+                            <li><a href="#">청와대 이야기</a></li>
+                            <li><a href="#">영상</a></li>
+                            <li><a href="#">카드뉴스</a></li>
+                            <li><a href="#">세계의 시선</a></li>
+                            <li><a href="#">청와대 일기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>정책정보</h3>
+                        <ul class="gnb__depth2">
+                            <li><a href="#">정책브리핑</a></li>
+                            <li><a href="#">국정과제</a></li>
+                            <li><a href="#">정부부처 업무보고</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>국민소통 광장</h3>
+                        <ul class="gnb__depth2">
+                            <li><a href="#">문재인 대통령 3주년</a></li>
+                            <li><a href="#">국민청원</a></li>
+                            <li><a href="#">국민과의 대화</a></li>
+                            <li><a href="#">토론방</a></li>
+                            <li><a href="#">국민신문고</a></li>
+                            <li><a href="#">열린참여</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>청와대 알림판</h3>
+                        <ul class="gnb__depth2">
+                            <li><a href="#">정보공개</a></li>
+                            <li><a href="#">일자리 상황판</a></li>
+                            <li><a href="#">청와대 조직도</a></li>
+                            <li><a href="#">세입.세출예산 운용상황</a></li>
+                            <li><a href="#">대통령 기록관</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>청와대 관람 신청</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contact"></div>
+            <div class="footer__copyright">
+                <p>&copy; Office of the President. All rights reserved.</p>
+            </div>
+        </footer>
+        <div class="navigation">
+            <div class="navigation__prev">
+                <a href="#"></a>
+            </div>
+            <div class="navigation__num">
+                <span class="navigation__num__page">1</span>
+                <span class="navigation__num__slash">/</span>
+                <span class="navigation__num__total">6</span>
+            </div>
+            <div class="navigation__next">
+                <a href="#"></a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
