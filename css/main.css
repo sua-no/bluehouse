@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+  vertical-align: baseline;
+  color: #1c1b20;
+  font-size: 16px; }
+
+a {
+  display: inline-block;
+  text-decoration: none; }
+
+span {
+  display: inline-block; }
+
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  font-family: 'Noto Sans KR', sans-serif;
+  cursor: pointer; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.wrap {
+  width: 100%; }
+
+.header {
+  width: 100%;
+  height: 197px; }
+  .header__wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0 80px;
+    box-sizing: border-box;
+    position: relative; }
+    .header__wrapper h1 {
+      width: 169px;
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("../img/logo_bg.png") no-repeat center center;
+      z-index: 100; }
+    .header__wrapper .gnb {
+      width: 100%;
+      height: 67px;
+      background: #040712;
+      position: absolute;
+      left: 0;
+      top: 55px;
+      z-index: 80; }
+      .header__wrapper .gnb__depth1 {
+        width: 94%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .header__wrapper .gnb__depth1 > li {
+          width: 12%;
+          height: 100%;
+          position: relative; }
+          .header__wrapper .gnb__depth1 > li .gnb__depth1__list {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 67px;
+            color: #fff; }
+        .header__wrapper .gnb__depth1 .gnb__depth2 {
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 67px; }
+          .header__wrapper .gnb__depth1 .gnb__depth2 li {
+            font-size: 15px;
+            line-height: 33px; }
+
+.contents .section {
+  width: 100%;
+  height: 100vh; }
+  .contents .section.page1 {
+    overflow-y: scroll; }
+
+/*# sourceMappingURL=main.css.map */
