@@ -454,7 +454,87 @@ body {
     .contents .section.page6 {
       background: #071238; }
 
+.footer__gnb {
+  width: 100%;
+  height: 301px;
+  padding: 50px 0;
+  box-sizing: border-box;
+  background: #222433;
+  border-top: 1px solid #7c7c7c;
+  border-bottom: 1px solid #7c7c7c; }
+  .footer__gnb .gnb__depth1 {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: flex; }
+    .footer__gnb .gnb__depth1 > li {
+      width: 20%;
+      display: flex;
+      flex-direction: column; }
+      .footer__gnb .gnb__depth1 > li h3 {
+        width: 150px;
+        display: inline-block;
+        margin: 0 auto;
+        font-size: 18px;
+        color: #fff; }
+        .footer__gnb .gnb__depth1 > li h3 a {
+          width: 150px;
+          display: inline-block;
+          margin: 12px auto 0;
+          font-size: 16px;
+          color: #fff; }
+      .footer__gnb .gnb__depth1 > li .gnb__depth2 {
+        width: 150px;
+        display: inline-block;
+        margin: 10px auto 0; }
+        .footer__gnb .gnb__depth1 > li .gnb__depth2 li {
+          padding: 3px 0; }
+          .footer__gnb .gnb__depth1 > li .gnb__depth2 li a {
+            font-size: 12px;
+            color: #cfcfd0; }
+            .footer__gnb .gnb__depth1 > li .gnb__depth2 li a:hover {
+              text-decoration: underline; }
+.footer__contact {
+  width: 100%;
+  height: 280px;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #282828; }
+  .footer__contact__sns {
+    width: 340px;
+    display: flex;
+    flex-direction: column; }
+    .footer__contact__sns__list {
+      width: 160px;
+      display: flex;
+      justify-content: space-around; }
+      .footer__contact__sns__list li {
+        width: 20px;
+        height: 20px;
+        background-image: url("../img/footer_sns.png");
+        background-repeat: no-repeat;
+        background-position: left 0;
+        opacity: .2; }
+        .footer__contact__sns__list li:hover {
+          opacity: 1; }
+        .footer__contact__sns__list li:nth-of-type(2) {
+          background-position: left -20px; }
+        .footer__contact__sns__list li:nth-of-type(3) {
+          background-position: left -40px; }
+        .footer__contact__sns__list li:nth-of-type(4) {
+          background-position: left -60px; }
+        .footer__contact__sns__list li:nth-of-type(5) {
+          background-position: left -80px; }
+  .footer__contact__info {
+    width: 470px; }
+  .footer__contact__menu {
+    width: 50%; }
 .footer__copyright p {
+  width: 100%;
   height: 30px;
   padding: 10px 0;
   background: #212121;

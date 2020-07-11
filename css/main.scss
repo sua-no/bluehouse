@@ -474,21 +474,106 @@ body{
 }
 .footer{
     &__gnb{
+        width: 100%;
+        height: 301px;
+        padding: 50px 0;
+        box-sizing: border-box;
+        background: #222433;
+        border-top: 1px solid #7c7c7c;
+        border-bottom: 1px solid #7c7c7c;
         .gnb__depth1{
+            width: 1280px;
+            margin: 0 auto;
+            padding: 0 50px;
+            box-sizing: border-box;
+            display: flex;
             >li{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
                 h3{
-
+                    width: 150px;
+                    display: inline-block;
+                    margin: 0 auto;
+                    font-size: 18px;
+                    color: #fff;
+                    a{
+                        width: 150px;
+                        display: inline-block;
+                        margin: 12px auto 0;
+                        font-size: 16px;
+                        color: #fff;
+                    }
                 }
                 .gnb__depth2{
+                    width: 150px;
+                    display: inline-block;
+                    margin: 10px auto 0;
                     li{
-                        a{}
+                        padding: 3px 0;
+                        a{
+                            font-size: 12px;
+                            color: #cfcfd0;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
                     }
                 }
             }
         }
     }
-    &__contact{}
+    &__contact{
+        width: 100%;
+        height: 280px;
+        padding: 60px 40px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #282828;
+        &__sns{
+            width: 340px;
+            display: flex;
+            flex-direction: column;
+            &__list{
+                width: 160px;
+                display: flex;
+                justify-content: space-around;
+                li{
+                    width: 20px;
+                    height: 20px;
+                    background-image: url("../img/footer_sns.png");
+                    background-repeat: no-repeat;
+                    background-position: left 0;
+                    opacity: .2;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    &:nth-of-type(2){
+                        background-position: left -20px;
+                    }
+                    &:nth-of-type(3){
+                        background-position: left -40px;
+                    }
+                    &:nth-of-type(4){
+                        background-position: left -60px;
+                    }
+                    &:nth-of-type(5){
+                        background-position: left -80px;
+                    }
+                }
+            }
+        }
+        &__info{
+            width: 470px;
+        }
+        &__menu{
+            width: 50%;
+        }
+    }
     &__copyright p{
+        width: 100%;
         height: 30px;
         padding: 10px 0;
         background: #212121;
