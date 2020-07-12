@@ -469,8 +469,121 @@ body{
         }
     }
 }
+.section{
+    &__wrap{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        ul{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            li{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                z-index: -1;
+                img{
+                    &:first-of-type{
+                        width: 100%;
+                    }
+                    &:last-of-type{
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                    }
+                }
+            }
+        }
+        .news{
+            width: 1366;
+            height: 79px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 50;
+            &__bar{
+                position: absolute;
+                right: 0;
+                bottom: -2px;
+                p{
+                    position: absolute;
+                    right: 289px;
+                    top: 36px;
+                    color: #fff;
+                    font-size: 30px;
+                    font-weight: 400;
+                }
+            }
+            &__date{
+                position: absolute;
+                right: 0;
+                bottom: -2px;
+                h3{
+                    position: absolute;
+                    bottom: 17px;
+                    right: 56px;
+                    font-size: 20px;
+                    letter-spacing: 0.5px;
+                    color: #14204c;
+                    font-weight: 400;
+                }
+            }
+        }
+        .controls{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            &__pause{
+                width: 26px;
+                height: 26px;
+                cursor: pointer;
+                background-image: url('../img/pauseplay_icon.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 0 top;
+                &.play{
+                    background-position: 0 bottom;
+                }
+            }
+            &__button{
+                display: flex;
+                margin-left: 44px;
+                &__wrap{
+                    margin: 0 6px;
+                    padding: 10px 0;
+                    vertical-align: middle;
+                    &.active button{
+                        border: 1px solid #333;
+                        background-color: #fff;
+                        cursor: default;
+                    }
+                    button{
+                        width: 55px;
+                        height: 9px;
+                        vertical-align: middle;
+                        border: 1px solid #858585;
+                        border-radius: 5px;
+                        background: rgba(255,255,255,0.3);
+                        cursor: pointer;
+                    }
+                }
+                
+                
+            }
+        }
+        .scroll__down{}
+    }
+}
 .section.page2{
-    background: #2e3961;
+    
 
 }
 .section.page3{

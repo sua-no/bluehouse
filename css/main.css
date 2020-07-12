@@ -454,8 +454,95 @@ body {
               .section.page1 .page1__table__right .covid__newsroom__list__3__box ul li:nth-of-type(4) {
                 font-weight: 500; }
 
-.section.page2 {
-  background: #2e3961; }
+.section__wrap {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .section__wrap ul {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .section__wrap ul li {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      z-index: -1; }
+      .section__wrap ul li img:first-of-type {
+        width: 100%; }
+      .section__wrap ul li img:last-of-type {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%); }
+  .section__wrap .news {
+    width: 1366;
+    height: 79px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 50; }
+    .section__wrap .news__bar {
+      position: absolute;
+      right: 0;
+      bottom: -2px; }
+      .section__wrap .news__bar p {
+        position: absolute;
+        right: 289px;
+        top: 36px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 400; }
+    .section__wrap .news__date {
+      position: absolute;
+      right: 0;
+      bottom: -2px; }
+      .section__wrap .news__date h3 {
+        position: absolute;
+        bottom: 17px;
+        right: 56px;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        color: #14204c;
+        font-weight: 400; }
+  .section__wrap .controls {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    bottom: 10px; }
+    .section__wrap .controls__pause {
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      background-image: url("../img/pauseplay_icon.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 top; }
+      .section__wrap .controls__pause.play {
+        background-position: 0 bottom; }
+    .section__wrap .controls__button {
+      display: flex;
+      margin-left: 44px; }
+      .section__wrap .controls__button__wrap {
+        margin: 0 6px;
+        padding: 10px 0;
+        vertical-align: middle; }
+        .section__wrap .controls__button__wrap.active button {
+          border: 1px solid #333;
+          background-color: #fff;
+          cursor: default; }
+        .section__wrap .controls__button__wrap button {
+          width: 55px;
+          height: 9px;
+          vertical-align: middle;
+          border: 1px solid #858585;
+          border-radius: 5px;
+          background: rgba(255, 255, 255, 0.3);
+          cursor: pointer; }
 
 .section.page3 {
   background: #2e3961; }
