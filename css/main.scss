@@ -16,6 +16,7 @@ body{
 .header{
     width: 100%;
     position: fixed;
+    z-index: 200;
     &__wrapper{
         width: 100%;
         padding: 0 80px;
@@ -92,14 +93,58 @@ body{
                 position: absolute;
                 right: 28px;
                 top: 20px;
-                z-index: 91;
-                button{
+                >button{
                     width: 28px;
                     height: 28px;
                     @include background("search_icon.png");
                 }
                 &__page{
+                    width: 100vw;
+                    height: 100vh;
                     display: none;
+                    position: absolute;
+                    right: -28px;
+                    top: -75px;
+                    z-index: 1000;
+                    background: #fff;
+                    background-image: url('../img/bg_search.jpg');
+                    background-repeat: no-repeat;
+                    background-position: center top;
+                    background-size: cover;
+                    &__input{ 
+                        width: 600px;
+                        position: absolute; 
+                        left: 50%;     
+                        bottom: 300px;           
+                        transform: translateX(-50%);
+                        input{
+                            width: 100%;
+                            height: 60px;
+                            padding-left: 10px;
+                            border: 0;
+                            color: #8a8a8a;
+                            background: transparent;
+                            font-size: 34px;
+                            border-bottom: 2px solid #8a8a8a;
+                        }
+                        &__button{
+                            width: 100%;
+                            height: 63px;
+                            margin-top: 13px;
+                            background: #0a1748;
+                            font-size: 25px;
+                            color: #fff;
+                            border-radius: 2px;
+                        }
+                    }
+                    &__closer{
+                        width: 50px;
+                        height: 50px;
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                        background: url('../img/ser_closeBtn.png') no-repeat center center/contain;
+                    }
                 }
             }
             .language{

@@ -11,6 +11,8 @@ window.addEventListener("DOMContentLoaded",function(){
     $('.gnb .gnb__depth1 li').on('mouseout',function(e){
         depth2down(e,$(this),$(this).find('.gnb__depth2'));
     });
+    $('.search__icon').on('click',searchDown);
+    $('.search__page__closer').on('click',searchUp);
     
     function scrollManager(){
         let scrollHeight = $(this).prop('scrollHeight') - $(window).height();
@@ -73,5 +75,17 @@ window.addEventListener("DOMContentLoaded",function(){
             depth2.stop().slideUp(300);
             li.removeClass('hover');
         }
+    }
+    function searchDown(){
+        $('.header__wrapper h1').css({
+            zIndex : 0
+        })
+        $('.search__page').slideDown(500);
+    }
+    function searchUp(){
+        $('.header__wrapper h1').css({
+            zIndex : 100
+        })
+        $('.search__page').slideUp(500);
     }
 })

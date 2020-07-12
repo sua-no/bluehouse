@@ -76,7 +76,8 @@ body {
 
 .header {
   width: 100%;
-  position: fixed; }
+  position: fixed;
+  z-index: 200; }
   .header__wrapper {
     width: 100%;
     padding: 0 80px;
@@ -140,14 +141,54 @@ body {
       .header__wrapper .gnb .search {
         position: absolute;
         right: 28px;
-        top: 20px;
-        z-index: 91; }
-        .header__wrapper .gnb .search button {
+        top: 20px; }
+        .header__wrapper .gnb .search > button {
           width: 28px;
           height: 28px;
           background: url("../img/search_icon.png") no-repeat center center; }
         .header__wrapper .gnb .search__page {
-          display: none; }
+          width: 100vw;
+          height: 100vh;
+          display: none;
+          position: absolute;
+          right: -28px;
+          top: -75px;
+          z-index: 1000;
+          background: #fff;
+          background-image: url("../img/bg_search.jpg");
+          background-repeat: no-repeat;
+          background-position: center top;
+          background-size: cover; }
+          .header__wrapper .gnb .search__page__input {
+            width: 600px;
+            position: absolute;
+            left: 50%;
+            bottom: 300px;
+            transform: translateX(-50%); }
+            .header__wrapper .gnb .search__page__input input {
+              width: 100%;
+              height: 60px;
+              padding-left: 10px;
+              border: 0;
+              color: #8a8a8a;
+              background: transparent;
+              font-size: 34px;
+              border-bottom: 2px solid #8a8a8a; }
+            .header__wrapper .gnb .search__page__input__button {
+              width: 100%;
+              height: 63px;
+              margin-top: 13px;
+              background: #0a1748;
+              font-size: 25px;
+              color: #fff;
+              border-radius: 2px; }
+          .header__wrapper .gnb .search__page__closer {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background: url("../img/ser_closeBtn.png") no-repeat center center/contain; }
       .header__wrapper .gnb .language {
         width: 90px;
         height: 25px;
