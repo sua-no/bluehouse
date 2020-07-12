@@ -11,3 +11,6 @@ $naverColor : #03c75a;
 @mixin background($url){
     background: url("../img/"+$url)no-repeat center center;
 }
+@mixin scrollAni($t, $d){
+    animation: scrollAni+$t .7s $d infinite alternate-reverse linear;
+}
